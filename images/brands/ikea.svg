@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 90" width="100%" height="100%">
+  <!-- Blue background box -->
+  <rect x="5" y="8" width="230" height="74" rx="6" fill="#0058A3"/>
+  <!-- Yellow oval -->
+  <ellipse cx="120" cy="45" rx="108" ry="33" fill="#FFDA1A"/>
+  <!-- Bold IKEA text -->
+  <text x="120" y="61" font-family="'IKEA', 'Arial Black', sans-serif" font-weight="900" font-size="52" fill="#0058A3" text-anchor="middle" letter-spacing="2">IKEA</text>
+</svg>

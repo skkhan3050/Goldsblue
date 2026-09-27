@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" width="100%" height="100%">
+  <!-- AMC red badge -->
+  <circle cx="45" cy="40" r="30" fill="#ED1C24"/>
+  <text x="45" y="50" font-family="Arial, sans-serif" font-weight="900" font-size="28" fill="#ffffff" text-anchor="middle">aMC</text>
+  <text x="90" y="44" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="24" fill="#111111" letter-spacing="1">THEATRES</text>
+  <text x="90" y="60" font-family="Arial, sans-serif" font-weight="600" font-size="12" fill="#ED1C24" letter-spacing="2">CINEMAS</text>
+</svg>

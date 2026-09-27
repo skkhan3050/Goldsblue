@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 75" width="100%" height="100%">
+  <!-- Delta 3D Triangle Widget -->
+  <g transform="translate(10, 12)">
+    <polygon points="26,0 0,45 17,45 26,20" fill="#E01933"/>
+    <polygon points="26,0 26,20 35,45 52,45" fill="#990000"/>
+    <polygon points="26,20 17,45 35,45" fill="#B31217"/>
+  </g>
+  <text x="72" y="50" font-family="'Whitney', Arial, sans-serif" font-weight="900" font-size="38" fill="#002244" letter-spacing="2">DELTA</text>
+</svg>

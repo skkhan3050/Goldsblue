@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290 80" width="100%" height="100%">
+  <!-- Iconic 'M' lettermark -->
+  <g transform="translate(15, 10)">
+    <path d="M0,48 L10,12 L22,38 L34,12 L44,48 L35,48 L28,26 L22,40 L16,26 L9,48 Z" fill="#B30838"/>
+  </g>
+  <text x="75" y="52" font-family="'Marriott', Georgia, serif" font-weight="700" font-size="36" fill="#B30838" letter-spacing="1">Marriott</text>
+</svg>

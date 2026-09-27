@@ -1,0 +1,810 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmed! - Golds Blue Services USA 🇺🇸</title>
+    <meta name="description" content="Thank you for submitting your booking request to Golds Blue Services. Our North American team is processing your 20% discount." />
+    
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="apple-touch-icon" href="images/logo.png">
+    <meta name="theme-color" content="#1e1b4b">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=3">
+
+    <style>
+        /* ==========================================================================
+           PREMIUM THANK YOU PAGE DESIGN SYSTEM
+           ========================================================================== */
+        :root {
+            --primary-gradient: linear-gradient(135deg, #b31217 0%, #e11d48 100%);
+            --hero-bg-gradient: radial-gradient(circle at 50% 0%, #2e1065 0%, #0f172a 70%, #020617 100%);
+            --card-glass: rgba(255, 255, 255, 0.98);
+        }
+
+        body {
+            background-color: #0b0f19;
+            color: #1e293b;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+
+        /* Top Notification Bar */
+        .thankyou-topbar {
+            background: linear-gradient(90deg, #1e1b4b, #b31217);
+            color: #ffffff;
+            font-size: 13px;
+            padding: 8px 0;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        /* Hero Wrapper with Ambient Glowing Mesh */
+        .thankyou-hero-wrap {
+            position: relative;
+            background: var(--hero-bg-gradient);
+            padding: 60px 0 100px;
+            overflow: hidden;
+            flex: 1;
+        }
+
+        /* Ambient Glow Spheres */
+        .ambient-glow-1 {
+            position: absolute;
+            top: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 600px;
+            height: 350px;
+            background: radial-gradient(circle, rgba(225, 29, 72, 0.25) 0%, rgba(139, 92, 246, 0.15) 50%, transparent 70%);
+            filter: blur(60px);
+            pointer-events: none;
+        }
+
+        .ambient-glow-2 {
+            position: absolute;
+            bottom: 50px;
+            right: 10%;
+            width: 350px;
+            height: 350px;
+            background: radial-gradient(circle, rgba(16, 185, 129, 0.15) 0%, transparent 70%);
+            filter: blur(50px);
+            pointer-events: none;
+        }
+
+        /* Floating Confetti Particle Animation */
+        .confetti-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .confetti-piece {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #ffd700;
+            opacity: 0.7;
+            animation: confettiFall 6s infinite linear;
+        }
+
+        @keyframes confettiFall {
+            0% { transform: translateY(-50px) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(800px) rotate(720deg); opacity: 0; }
+        }
+
+        /* Main Confirmation Container */
+        .thankyou-main-card {
+            position: relative;
+            z-index: 2;
+            max-width: 860px;
+            margin: 0 auto;
+            background: var(--card-glass);
+            border-radius: 24px;
+            box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.2);
+            padding: 48px 44px;
+            backdrop-filter: blur(20px);
+            animation: cardSlideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        @keyframes cardSlideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Header Seal Animation */
+        .success-badge-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .success-badge-icon-wrap {
+            position: relative;
+            width: 96px;
+            height: 96px;
+            margin-bottom: 20px;
+        }
+
+        .success-badge-ring {
+            position: absolute;
+            inset: -8px;
+            border-radius: 50%;
+            background: conic-gradient(from 0deg, #10b981, #f59e0b, #e11d48, #10b981);
+            animation: spinRing 4s linear infinite;
+            opacity: 0.8;
+            filter: blur(4px);
+        }
+
+        @keyframes spinRing {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .success-badge-circle {
+            position: relative;
+            width: 96px;
+            height: 96px;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            font-size: 44px;
+            box-shadow: 0 10px 25px rgba(16, 185, 129, 0.4);
+            border: 3px solid #ffffff;
+        }
+
+        .thankyou-headline {
+            font-family: var(--font-heading);
+            font-size: 34px;
+            font-weight: 800;
+            color: #0f172a;
+            letter-spacing: -0.5px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .thankyou-subline {
+            font-size: 16px;
+            color: #475569;
+            max-width: 620px;
+            line-height: 1.6;
+        }
+
+        .thankyou-subline strong {
+            color: #0f172a;
+            background: #fee2e2;
+            padding: 2px 8px;
+            border-radius: 6px;
+        }
+
+        /* --------------------------------------------------------------------------
+           VIP DEAL PASS / RECEIPT TICKET (Modern Airline Ticket Style)
+           -------------------------------------------------------------------------- */
+        .vip-deal-pass {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #ffffff;
+            border-radius: 18px;
+            padding: 28px;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 32px;
+            box-shadow: 0 12px 30px rgba(15, 23, 42, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .vip-deal-pass::after {
+            content: '';
+            position: absolute;
+            right: -40px;
+            top: -40px;
+            width: 140px;
+            height: 140px;
+            background: radial-gradient(circle, rgba(225, 29, 72, 0.2) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .pass-top-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.18);
+            padding-bottom: 16px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .pass-brand-tag {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-family: var(--font-heading);
+            font-weight: 800;
+            font-size: 14px;
+            color: #ffffff;
+            letter-spacing: 0.5px;
+        }
+
+        .pass-brand-tag img {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            border: 1px solid rgba(255,255,255,0.4);
+        }
+
+        .pass-status-pill {
+            background: rgba(16, 185, 129, 0.2);
+            border: 1px solid #10b981;
+            color: #34d399;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 5px 12px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .pass-status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #10b981;
+            animation: pulseDot 1.5s infinite;
+        }
+
+        @keyframes pulseDot {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.4; transform: scale(0.8); }
+        }
+
+        /* Pass Data Grid */
+        .pass-data-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+        }
+
+        .pass-data-item label {
+            display: block;
+            font-size: 11px;
+            font-weight: 600;
+            color: #94a3b8;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            margin-bottom: 4px;
+        }
+
+        .pass-data-item .pass-val {
+            font-size: 15px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .pass-data-item .pass-val.highlight-gold {
+            color: #fbbf24;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .pass-data-item .pass-val.highlight-ref {
+            font-family: monospace;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #f1f5f9;
+        }
+
+        /* --------------------------------------------------------------------------
+           LIVE 3-STEP PROGRESS TIMELINE
+           -------------------------------------------------------------------------- */
+        .timeline-box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 28px;
+        }
+
+        .timeline-box-title {
+            font-family: var(--font-heading);
+            font-size: 15px;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .progress-steps-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+            position: relative;
+        }
+
+        .progress-step-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 16px;
+            position: relative;
+            transition: transform 0.2s ease;
+        }
+
+        .progress-step-card.done {
+            border-color: #a7f3d0;
+            background: #f0fdf4;
+        }
+
+        .progress-step-card.active {
+            border-color: #fca5a5;
+            background: #fff5f5;
+            box-shadow: 0 4px 12px rgba(225, 29, 72, 0.08);
+        }
+
+        .step-pill-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 11px;
+            font-weight: 800;
+            padding: 3px 8px;
+            border-radius: 12px;
+            margin-bottom: 8px;
+        }
+
+        .step-pill-badge.done-badge {
+            background: #d1fae5;
+            color: #047857;
+        }
+
+        .step-pill-badge.active-badge {
+            background: #fee2e2;
+            color: #b31217;
+            animation: pulsePill 1.8s infinite;
+        }
+
+        @keyframes pulsePill {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
+        }
+
+        .step-pill-badge.pending-badge {
+            background: #f1f5f9;
+            color: #64748b;
+        }
+
+        .progress-step-card h4 {
+            font-size: 14px;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 4px;
+        }
+
+        .progress-step-card p {
+            font-size: 12.5px;
+            color: #64748b;
+            line-height: 1.4;
+        }
+
+        /* --------------------------------------------------------------------------
+           SUPPORT & ACTION BAR
+           -------------------------------------------------------------------------- */
+        .thankyou-support-strip {
+            background: linear-gradient(90deg, #eff6ff, #f0fdf4);
+            border: 1px solid #bfdbfe;
+            border-radius: 14px;
+            padding: 18px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 32px;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        .support-strip-left {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .support-strip-left .icon-circle {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: #2563eb;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        .support-strip-text h4 {
+            font-size: 14px;
+            font-weight: 700;
+            color: #1e3a8a;
+            margin-bottom: 2px;
+        }
+
+        .support-strip-text p {
+            font-size: 13px;
+            color: #3b82f6;
+        }
+
+        .btn-direct-email {
+            background: #ffffff;
+            color: #1e40af;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 8px 16px;
+            border-radius: 8px;
+            border: 1px solid #bfdbfe;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s ease;
+        }
+
+        .btn-direct-email:hover {
+            background: #2563eb;
+            color: #ffffff;
+            border-color: #2563eb;
+        }
+
+        /* Main CTA Buttons */
+        .thankyou-btn-actions {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn-cta-explore {
+            background: linear-gradient(135deg, #b31217 0%, #dc2626 100%);
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 700;
+            padding: 14px 32px;
+            border-radius: 10px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 6px 20px rgba(179, 18, 23, 0.35);
+            transition: all 0.25s ease;
+        }
+
+        .btn-cta-explore:hover {
+            background: #960e13;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(179, 18, 23, 0.45);
+            color: #ffffff;
+        }
+
+        .btn-cta-home {
+            background: #ffffff;
+            color: #334155;
+            font-size: 15px;
+            font-weight: 700;
+            padding: 14px 28px;
+            border-radius: 10px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            border: 1px solid #cbd5e1;
+            transition: all 0.25s ease;
+        }
+
+        .btn-cta-home:hover {
+            background: #f8fafc;
+            color: #0f172a;
+            border-color: #94a3b8;
+            transform: translateY(-2px);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .thankyou-hero-wrap {
+                padding: 30px 0 60px;
+            }
+            .thankyou-main-card {
+                padding: 30px 20px;
+                border-radius: 18px;
+            }
+            .thankyou-headline {
+                font-size: 24px;
+            }
+            .pass-data-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 12px;
+            }
+            .progress-steps-row {
+                grid-template-columns: 1fr;
+            }
+            .thankyou-btn-actions {
+                flex-direction: column;
+            }
+            .btn-cta-explore, .btn-cta-home {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Announcement Strip -->
+    <div class="thankyou-topbar">
+        <div class="content-wrapper">
+            <span><i class="fa-solid fa-shield-check"></i> <strong>OFFICIAL CONFIRMATION:</strong> Your request is protected by Goide Bulls 100% Satisfaction Guarantee.</span>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="header-wrapper">
+            <div class="super-header">
+                <div class="content-wrapper">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html" aria-label="Golds Blue Services Home">
+                            <div class="cd-logo-default custom-brand-logo">
+                                <img src="images/logo.png" alt="Golds Blue Services" class="brand-logo-img">
+                            </div>
+                        </a>
+                        
+                        <div class="header-right-actions">
+                            <div class="country-pill">
+                                <span class="flag-icon">🇺🇸</span>
+                                <span>USA / USD ($)</span>
+                            </div>
+                            
+                            <a href="index.html#all-services" class="btn-get-service">
+                                <i class="fa-solid fa-grid-2"></i> Browse 21+ Services
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Thank You Showcase Hero -->
+    <main class="thankyou-hero-wrap">
+        <!-- Ambient Glowing Lights -->
+        <div class="ambient-glow-1"></div>
+        <div class="ambient-glow-2"></div>
+
+        <!-- Floating Festive Confetti -->
+        <div class="confetti-container" id="confetti-holder"></div>
+
+        <div class="content-wrapper">
+            <div class="thankyou-main-card">
+                
+                <!-- Success Header with Animated Glowing Seal -->
+                <div class="success-badge-header">
+                    <div class="success-badge-icon-wrap">
+                        <div class="success-badge-ring"></div>
+                        <div class="success-badge-circle">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+
+                    <h1 class="thankyou-headline">
+                        Booking Request Confirmed! <span style="display:inline-block;">🎉</span>
+                    </h1>
+                    
+                    <p class="thankyou-subline">
+                        Thank you, <strong id="lead-name-text">Alamin Sk</strong>! Your service discount inquiry has been successfully recorded and dispatched to our priority desk.
+                    </p>
+                </div>
+
+                <!-- VIP Deal Pass / Receipt Ticket -->
+                <div class="vip-deal-pass">
+                    <div class="pass-top-row">
+                        <div class="pass-brand-tag">
+                            <img src="images/logo.png" alt="Golds Blue Services">
+                            <span>GOLDS BLUE SERVICES • VIP PASS</span>
+                        </div>
+                        <div class="pass-status-pill">
+                            <div class="pass-status-dot"></div>
+                            <span>● LIVE DISPATCH ACTIVE</span>
+                        </div>
+                    </div>
+
+                    <div class="pass-data-grid">
+                        <div class="pass-data-item">
+                            <label>Requested Service</label>
+                            <div class="pass-val" id="lead-service-text">Food Restaurants (Website)</div>
+                        </div>
+                        <div class="pass-data-item">
+                            <label>Discount Guarantee</label>
+                            <div class="pass-val highlight-gold">
+                                <i class="fa-solid fa-badge-percent"></i> Up to 20% OFF
+                            </div>
+                        </div>
+                        <div class="pass-data-item">
+                            <label>Est. Response Time</label>
+                            <div class="pass-val">5 - 15 Minutes</div>
+                        </div>
+                        <div class="pass-data-item">
+                            <label>Reference Ticket</label>
+                            <div class="pass-val highlight-ref" id="lead-ref-text">#GB-867275</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3-Step Live Progress Timeline -->
+                <div class="timeline-box">
+                    <div class="timeline-box-title">
+                        <i class="fa-solid fa-bars-progress" style="color:#b31217;"></i>
+                        <span>Live Request Progress Tracker</span>
+                    </div>
+
+                    <div class="progress-steps-row">
+                        <!-- Step 1 -->
+                        <div class="progress-step-card done">
+                            <span class="step-pill-badge done-badge">
+                                <i class="fa-solid fa-check"></i> STEP 1 • COMPLETED
+                            </span>
+                            <h4>Request Received</h4>
+                            <p>Logged in our Google Sheets central database &amp; assigned to North America desk.</p>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="progress-step-card active">
+                            <span class="step-pill-badge active-badge">
+                                <i class="fa-solid fa-circle-notch fa-spin"></i> STEP 2 • IN PROGRESS
+                            </span>
+                            <h4>Agent Review</h4>
+                            <p>A dedicated specialist is verifying promo codes &amp; matching maximum discounts.</p>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="progress-step-card">
+                            <span class="step-pill-badge pending-badge">
+                                <i class="fa-solid fa-clock"></i> STEP 3 • DISPATCH
+                            </span>
+                            <h4>Instant Delivery</h4>
+                            <p>You will receive booking instructions via Email / Phone within 15 minutes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Direct Support Strip -->
+                <div class="thankyou-support-strip">
+                    <div class="support-strip-left">
+                        <div class="icon-circle">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        <div class="support-strip-text">
+                            <h4>Need Immediate Assistance?</h4>
+                            <p>Our 24/7 North American Dispatch Desk is ready to assist you.</p>
+                        </div>
+                    </div>
+                    <a href="mailto:support@goidebulls.com" class="btn-direct-email">
+                        <i class="fa-solid fa-envelope"></i> support@goidebulls.com
+                    </a>
+                </div>
+
+                <!-- Action CTA Buttons -->
+                <div class="thankyou-btn-actions">
+                    <a href="index.html#all-services" class="btn-cta-explore">
+                        <i class="fa-solid fa-grid-2"></i> Explore All 21+ Services
+                    </a>
+                    <a href="index.html" class="btn-cta-home">
+                        <i class="fa-solid fa-house"></i> Return to Homepage
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="goide-footer" style="background: linear-gradient(135deg, #2E47B8 0%, #2A3878 100%) !important;">
+        <div class="content-wrapper">
+            <div class="footer-top-grid">
+                <div class="footer-col brand-col">
+                    <div class="footer-logo-wrap">
+                        <img src="images/logo.png" alt="Golds Blue Services" class="footer-logo-img">
+                        <span class="footer-brand-title">GOLDS BLUE SERVICES</span>
+                    </div>
+                    <p class="footer-about-text">
+                        Your trusted North American portal for premier service discounts, travel bookings, event tickets, rides, and retail savings across USA 🇺🇸 and Canada 🇨🇦.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Top Services</h4>
+                    <ul>
+                        <li><a href="index.html#travel-section">Flight Tickets (Worldwide)</a></li>
+                        <li><a href="index.html#travel-section">Hotels Booking</a></li>
+                        <li><a href="index.html#rides-section">Uber &amp; Car Rentals</a></li>
+                        <li><a href="index.html#shopping-section">IKEA Discounts</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Support Desk</h4>
+                    <ul>
+                        <li><a href="index.html#contact-section">24/7 US Support</a></li>
+                        <li><a href="mailto:support@goidebulls.com">Direct Email Help</a></li>
+                        <li><a href="index.html#all-services">All 50 States Coverage</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom-bar">
+                <p>&copy; 2026 Golds Blue Services. All Rights Reserved. Serving USA 🇺🇸 &amp; Canada 🇨🇦.</p>
+                <div class="footer-legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Dynamic URL Parsing & Confetti Generator Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Read URL params or Session Storage
+            const urlParams = new URLSearchParams(window.location.search);
+            const name = urlParams.get('name') || sessionStorage.getItem('last_lead_name') || 'Valued Customer';
+            const service = urlParams.get('service') || sessionStorage.getItem('last_lead_service') || 'Requested Service Category';
+            const ref = urlParams.get('ref') || sessionStorage.getItem('last_lead_ref') || ('GB-' + Math.floor(100000 + Math.random() * 900000));
+
+            const nameEl = document.getElementById('lead-name-text');
+            const serviceEl = document.getElementById('lead-service-text');
+            const refEl = document.getElementById('lead-ref-text');
+
+            if (nameEl) nameEl.textContent = name;
+            if (serviceEl) serviceEl.textContent = service;
+            if (refEl) refEl.textContent = '#' + (ref.startsWith('GB-') ? ref : 'GB-' + ref);
+
+            // 2. Generate Floating Festive Confetti
+            const confettiContainer = document.getElementById('confetti-holder');
+            if (confettiContainer) {
+                const colors = ['#f59e0b', '#10b981', '#ef4444', '#3b82f6', '#ec4899', '#8b5cf6'];
+                for (let i = 0; i < 35; i++) {
+                    const piece = document.createElement('div');
+                    piece.className = 'confetti-piece';
+                    piece.style.left = Math.random() * 100 + '%';
+                    piece.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                    piece.style.animationDelay = (Math.random() * 4) + 's';
+                    piece.style.animationDuration = (4 + Math.random() * 4) + 's';
+                    piece.style.width = (6 + Math.random() * 8) + 'px';
+                    piece.style.height = (8 + Math.random() * 10) + 'px';
+                    piece.style.borderRadius = Math.random() > 0.5 ? '50%' : '2px';
+                    confettiContainer.appendChild(piece);
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

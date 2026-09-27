@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <rect width="100" height="100" rx="22" fill="#003168"/>
+  <!-- StubHub ticket shape -->
+  <text x="50" y="52" font-family="'Arial Black', sans-serif" font-weight="900" font-size="20" fill="#ffffff" text-anchor="middle">Stub</text>
+  <text x="50" y="74" font-family="'Arial Black', sans-serif" font-weight="900" font-size="20" fill="#FF5000" text-anchor="middle">Hub</text>
+</svg>
